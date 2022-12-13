@@ -9,14 +9,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 150px 200px;
-  margin-top: 30px;
+  padding: 80px 30px;
 }
 
 header h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 86px;
   line-height: 1.5;
   color: #ffffff;
   margin: 0;
@@ -57,20 +56,50 @@ header a {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 100px 30px;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+main h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+  color: #272044;
+}
+
+main h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #272044;
+  opacity: 0.3;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #272044;
+  opacity: 0.7;
+  text-align: justify;
 }
 
 footer {
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.8),
       rgba(39, 32, 68, 0.9)
     ),
     url("../images/footer-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  padding: 100px 170px;
 }
 
 footer h3 {
@@ -113,13 +142,24 @@ footer p {
   margin: 0 auto;
 }
 
-.footer-grid {
+.grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 5px;
+  grid-gap: 40px;
 }
 
-@media (max-width: 1400px) {
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
   header {
     padding: 67px 0;
     margin: 0 50px;
@@ -142,17 +182,15 @@ footer p {
     padding: 8px 16px;
   }
 
+  main {
+    text-align: center;
+  }
+
   footer {
-    padding: 50px 70px;
-    margin: 0 50px;
+    text-align: center;
   }
 
-  footer h3 {
-    font-size: 10px;
-  }
-
-  footer li,
-  footer p {
-    font-size: 9px;
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
