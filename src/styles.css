@@ -56,9 +56,12 @@ header a {
 }
 
 section {
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 100px 30px;
+  padding: 100px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
 }
 
 main {
@@ -69,7 +72,7 @@ main h2 {
   margin: 0;
   font-weight: 700;
   font-size: 30px;
-  line-height: 50px;
+  line-height: 1.5;
   color: #272044;
 }
 
@@ -77,15 +80,31 @@ main h3 {
   margin: 0;
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   color: #272044;
   opacity: 0.3;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
 }
 
 main p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   color: #272044;
   opacity: 0.7;
   text-align: justify;
@@ -151,12 +170,47 @@ footer p {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 .img-responsive {
   max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.card-body {
+  padding: 32px;
+}
+
+.card-footer {
+  padding: 30px;
+}
+
+.btn {
+  display: block;
+  background-color: #74b32c;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
