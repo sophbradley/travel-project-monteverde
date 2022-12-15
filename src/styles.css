@@ -226,6 +226,10 @@ footer p {
   text-decoration: none;
 }
 
+.instagram-embeds {
+  margin-top: 30px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 67px 0;
