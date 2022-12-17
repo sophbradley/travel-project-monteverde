@@ -140,20 +140,26 @@ footer li {
 
 footer a {
   color: #ffffff;
+  text-decoration: none;
   opacity: 0.7;
   transition: all 150ms ease-in-out;
 }
 
 footer a:hover {
   opacity: 1;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 footer p {
+  opacity: 0.7;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  opacity: 0.7;
+}
+
+footer p a {
+  text-decoration: underline;
+  opacity: 1;
 }
 
 .container {
